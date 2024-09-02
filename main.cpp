@@ -28,7 +28,14 @@ void ejemplo_1() {
   c.add(new Rectangle(34, 20));
   c.add(new Circle(1, 5));
   c.add(new Rectangle(3, 7));
-  
+  c.draw();
+
+  auto c_backup = c;
+  c.add(new Circle(111,111));  
+  c.add(new Circle(999,999));
+  std::cout << "---------------\n";
+  c_backup.draw();
+  std::cout << "---------------\n";
   c.draw();
 }
 
