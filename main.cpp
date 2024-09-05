@@ -37,6 +37,19 @@ void ejemplo_1() {
   c_backup.draw();
   std::cout << "---------------\n";
   c.draw();
+  Canvas c_temp;
+  c_temp = c; // Asignación copia
+  c.add(new Circle(777,777));
+  std::cout << "---------------\n";
+  c_backup.draw();
+  std::cout << "---------------\n";
+  c.draw();
+  std::cout << "---------------\n";
+  c_temp.draw();
+
+  auto c_mov = std::move(c);
+
+
 }
 
 

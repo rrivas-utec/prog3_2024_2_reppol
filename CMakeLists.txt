@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.16)
 project(prog3_2024_2_reppol)
 
 set(CMAKE_CXX_STANDARD 20)
